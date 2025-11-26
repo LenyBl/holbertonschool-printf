@@ -11,12 +11,10 @@ int _printf(const char *format, ...)
 	int indexFormat = 0;
 	int indexPrinter;
 	int recognized_format;
-	int lenght;
+	int lenght = 0;
 	char bufferFormat[3];
 
 	va_list listArgs;
-	va_start(listArgs, format);
-
 	checker_t printerStockage[] = {
 		{"%c", print_char},
 		{"%i", print_integer},
@@ -27,6 +25,8 @@ int _printf(const char *format, ...)
 
 	if (format == NULL)
 		return (-1);
+
+	va_start(listArgs, format);
 
 	while (format[indexFormat] != '\0')
 	{

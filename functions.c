@@ -63,7 +63,7 @@ int print_integer(va_list args)
 
 	if (n < 0)
 	{
-		_putchar('-');
+		putchar('-');
 		lenght++;
 		num = -n;
 	}

@@ -41,9 +41,9 @@ int _printf(const char *format, ...)
 				bufferFormat[1] = format[indexFormat + 1];
 				bufferFormat[2] = '\0';
 
-				if (strcmp(bufferFormat, printerStockage[indexPrinter].type) == 0)
+				if (strcmp(bufferFormat, *printerStockage[indexPrinter].type) == 0)
 				{
-					lenght += printerStockage[indexPrinter].func(listArgs);
+					lenght += *printerStockage[indexPrinter].func(listArgs);
 					recognized_format = 1;
 					indexFormat += 2;
 					break;

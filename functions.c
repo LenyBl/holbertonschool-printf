@@ -4,7 +4,7 @@
  *
  * @args: va_list containing the character to print
  *
- * Return: Nothing
+ * Return: 1 (number of characters printed)
  */
 int print_char(va_list args)
 {
@@ -15,7 +15,9 @@ int print_char(va_list args)
 /**
  * print_percent - prints a percent sign
  *
- * @return: The percent character
+ * @args: va_list containing the percent sign to print
+ *
+ * Return: 1 (number of characters printed)
  */
 int print_percent(va_list args)
 {
@@ -28,7 +30,7 @@ int print_percent(va_list args)
  *
  * @args: va_list containing the string to print
  *
- * Return: Nothing
+ * Return: Number of characters printed
  */
 int print_string(va_list args)
 {
@@ -51,7 +53,7 @@ int print_string(va_list args)
  *
  * @args: va_list containing the integer to print
  *
- * Return: Nothing
+ * Return: Number of characters printed
  */
 int print_integer(va_list args)
 {
@@ -92,9 +94,9 @@ int print_integer(va_list args)
  *
  * @args: va_list containing the float to print
  *
- * Return: Nothing
+ * Return: Number of characters printed
  */
-void print_float(va_list args)
+int print_float(va_list args)
 {
 	double num = va_arg(args, double);
 	int int_part = (int)num;

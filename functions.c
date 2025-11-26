@@ -66,7 +66,7 @@ int print_integer(va_list args)
 	{
 		putchar('0');
 		length++;
-		return;
+		return (length);
 	}
 
 	if (num < 0)

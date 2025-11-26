@@ -57,22 +57,39 @@ int print_string(va_list args)
  */
 int print_integer(va_list args)
 {
-	int n = va_arg(args, int);
-	unsigned int num;
-	int lenght = 0;
+	int num = va_arg(args, int);
+	int length = 0;
+	char buffer[12];
+	int is_negative = 0;
 
-	if (n < 0)
+	if (num == 0)
 	{
-		putchar('-');
-		lenght++;
-		num = -n;
-	}
-	else
-	{
-		num = n;
+		putchar('0');
+		return (1);
 	}
 
-	lenght += print_number(num);
+	if (num < 0)
+	{
+		is_negative = 1;
+		num = -num;
+	}
 
-	return (lenght);
+	while (num > 0)
+	{
+		buffer[i++] = (num % 10) + '0';
+		num /= 10;
+	}
+
+	if (is_negative)
+	{
+		buffer[i++] = '-';
+	}
+
+	while (i--)
+	{
+		putchar(buffer[i]);
+		length++;
+	}
+
+	return (length);
 }

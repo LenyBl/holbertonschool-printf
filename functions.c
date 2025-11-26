@@ -73,13 +73,13 @@ int print_integer(va_list args)
 	{
 		putchar('-');
 		length++;
-		num = -num;
+		num = -num; // transform to positive
 	}
 
 	while (num > 0)
 	{
-		buffer[i++] = (num % 10) + '0';
-		num /= 10;
+		buffer[i++] = (num % 10) + '0'; //  extract the last digit and convert to char
+		num /= 10; // remove the last digit
 	}
 
 	while (i--)

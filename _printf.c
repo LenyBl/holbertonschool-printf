@@ -18,7 +18,8 @@ int _printf(const char *format, ...)
 	checker_t printerStockage[] = {
 		{"%c", print_char},
 		{"%i", print_integer},
-		{"%d", print_float},
+		{"%d", print_integer},
+		{"%f", print_float},
 		{"%s", print_string},
 		{"%%", print_percent},
 		{"", NULL}};

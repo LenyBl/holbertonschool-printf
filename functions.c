@@ -22,7 +22,7 @@ int print_char(va_list args)
 int print_percent(va_list args)
 {
 	(void)args;
-	// putchar('%');
+	putchar('%');
 	return (1);
 }
 /**

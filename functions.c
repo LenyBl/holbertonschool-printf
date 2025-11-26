@@ -57,10 +57,11 @@ int print_string(va_list args)
  */
 int print_integer(va_list args)
 {
-	int num = va_arg(args, int);
+	int n = va_arg(args, int);
+	long num = n;
 	int length = 0;
-	char buffer[12];
-	int is_negative = 0;
+	char buffer[20];
+	int i = 0;
 
 	if (num == 0)
 	{
@@ -70,7 +71,8 @@ int print_integer(va_list args)
 
 	if (num < 0)
 	{
-		is_negative = 1;
+		putchar('-');
+		length++;
 		num = -num;
 	}
 
@@ -78,11 +80,6 @@ int print_integer(va_list args)
 	{
 		buffer[i++] = (num % 10) + '0';
 		num /= 10;
-	}
-
-	if (is_negative)
-	{
-		buffer[i++] = '-';
 	}
 
 	while (i--)

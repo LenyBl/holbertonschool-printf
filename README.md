@@ -1,13 +1,55 @@
-![texte alternatif](flowchart/flowchart-printf.png)
-
 # holbertonschool-printf
 
 A custom implementation of the C `printf` function, written as part of the Holberton curriculum.
+
+![texte alternatif](flowchart/flowchart-printf.png)
 
 ## Description
 
 The project aims to recreate the standard `printf` function.  
 The `_printf` function prints formatted text by interpreting various *format specifiers*.
+
+## Objectives
+
+The main objectives of this project are:
+
+- Understand how variadic functions work in C using `stdarg.h`
+- Reproduce the behavior of the standard `printf` function
+- Implement a modular and scalable format-handling system
+- Improve knowledge of function pointers and structured code organization
+- Follow strict coding style and compilation constraints
+
+## Requirements
+
+To compile, run, and maintain this project, the following requirements must be met:
+
+- **GCC Compilation**
+  The project must be compiled with the `gcc` compiler using the following flags:  
+  `-Wall -Werror -Wextra -pedantic -std=gnu89`
+
+- **Betty Coding Style**
+  All code must strictly follow the **Betty style guidelines**, including:
+  - Betty-style formatting  
+  - Betty-style documentation  
+  - Proper function and file organization
+
+- **Allowed Files**
+  Only the required project files should be present. No extra files should be added without justification.
+
+- **No Global Variables**
+  The use of global variables is strictly prohibited.
+
+- **Code Organization**
+  - Maximum of 5 functions per file (as per Holberton requirements)  
+  - All header files must include proper *include guards*  
+  - Code must remain clean, readable, and well-structured
+
+- **Minimum Required Features**
+  At minimum, the implementation must support the following format specifiers: `%c`, `%s`, `%d`, `%i`, `%%`
+
+- **Recommended Environment**
+  - Linux-based OS or WSL  
+  - Text editor or IDE of your choice (Vim, VSCode, etc.)
 
 ## Prototype
 

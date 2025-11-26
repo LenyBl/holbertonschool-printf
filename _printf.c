@@ -32,6 +32,11 @@ int _printf(const char *format, ...)
 	{
 		if (format[indexFormat] == '%')
 		{
+			if (format[indexFormat + 1] == '\0')
+			{
+				return (-1);
+			}
+			
 			recognized_format = 0;
 			indexPrinter = 0;
 

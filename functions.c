@@ -22,7 +22,7 @@ int print_char(va_list args)
 int print_percent(va_list args)
 {
 	(void)args;
-	putchar('%');
+	// putchar('%');
 	return (1);
 }
 /**
@@ -105,7 +105,7 @@ int print_float(va_list args)
 	int i, j;
 	char buffer[20];
 	int digit;
-	
+
 	if (num < 0)
 	{
 		putchar('-');

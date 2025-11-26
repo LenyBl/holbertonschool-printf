@@ -57,7 +57,7 @@ int print_string(va_list args)
  */
 int print_integer(va_list args)
 {
-	int num = va_arg(args, int);
+	unsigned int num = va_arg(args, int);
 	char buffer[12];
 	int length = 0;
 	int i = 0, j;

@@ -15,7 +15,7 @@
 typedef struct checker
 {
 	char *type;
-	char (*func)(va_list args);
+	int (*func)(va_list args);
 } checker_t;
 
 int print_char(va_list args);

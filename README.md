@@ -36,13 +36,14 @@ int main(void)
     return (0);
 }
 
-Output :
-
-Hello, world!
-Number: 42, String: Test, Char: A, Percent: %
-
 ```
 
+## Output :
+
+```c
+Hello, world!
+Number: 42, String: Test, Char: A, Percent: %
+```
 ## Compilation
 
 ```bash

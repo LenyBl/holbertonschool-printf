@@ -104,6 +104,8 @@ int print_float(va_list args)
 	double frac_part = num - int_part;
 	int i, j;
 	char buffer[20];
+	int digit;
+	
 	if (num < 0)
 	{
 		putchar('-');
@@ -138,7 +140,7 @@ int print_float(va_list args)
 	for (i = 0; i < 6; i++)
 	{
 		frac_part *= 10;
-		int digit = (int)frac_part;
+		digit = (int)frac_part;
 		putchar(digit + '0');
 		length++;
 		frac_part -= digit;

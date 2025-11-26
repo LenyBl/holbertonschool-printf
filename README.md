@@ -1,7 +1,5 @@
 ![texte alternatif](flowchart/flowchart-printf.png)
 
---
-
 # holbertonschool-printf
 
 A custom implementation of the C `printf` function, written as part of the Holberton curriculum.
@@ -37,6 +35,12 @@ int main(void)
     _printf("Number: %d, String: %s, Char: %c, Percent: %%\n", 42, "Test", 'A');
     return (0);
 }
+
+Output :
+
+Hello, world!
+Number: 42, String: Test, Char: A, Percent: %
+
 ```
 
 ## Compilation
@@ -49,8 +53,8 @@ gcc -Wall -Werror -Wextra -pedantic -std=gnu89 *.c -o printf
 
 - `main.h` — Prototypes and includes  
 - `_printf.c` — Main function implementation  
-- `utils/` — Helper functions  
-- `man_3_printf` — Manual page (if included)
+- `fonctions.c` — File withe all functions 
+- `man_3_printf` — Manual page 
 
 ## Constraints
 

@@ -86,6 +86,18 @@ int main(void)
 Hello, world!
 Number: 42, String: Test, Char: A, Percent: %
 ```
+
+## Man Page
+
+A manual page (`man_3_printf`) is included with the project to provide detailed documentation about the `_printf` function.
+
+### How to View the Man Page
+
+After generating or copying the `man_3_printf` file into your system, you can display it using:
+
+```bash
+man ./man_3_printf
+
 ## Compilation
 
 ```bash

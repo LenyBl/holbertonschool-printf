@@ -97,6 +97,7 @@ After generating or copying the `man_3_printf` file into your system, you can di
 
 ```bash
 man ./man_3_printf
+```
 
 ## Compilation
 

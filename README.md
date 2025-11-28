@@ -99,7 +99,9 @@ After generating or copying the `man_3_printf` file into your system, you can di
 man ./man_3_printf
 ```
 
-## Add permission to use Betty and Valgrind
+## Use Betty and Valgrind
+
+### Add permission
 
 ```bash
 chmod u+x _printf.c

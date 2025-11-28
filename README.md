@@ -99,6 +99,24 @@ After generating or copying the `man_3_printf` file into your system, you can di
 man ./man_3_printf
 ```
 
+## Betty Style 
+
+### Check permission
+
+```bash
+chmod u+x _printf.c
+```
+
+```bash
+betty _printf.c
+```
+
+## Valgrind
+
+```bash
+valgrind --leak-check=full _printf.c
+```
+
 ## Compilation
 
 ```bash

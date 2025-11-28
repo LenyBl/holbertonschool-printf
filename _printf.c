@@ -30,7 +30,7 @@ int _printf(const char *format, ...)
 				bufferFormat[0] = format[indexFormat];
 				bufferFormat[1] = format[indexFormat + 1];
 				bufferFormat[2] = '\0';
-				if (!strcmp(bufferFormat, printerStockage[indexPrinter].type))
+				if (strcmp(bufferFormat, printerStockage[indexPrinter].type) == 0)
 				{
 					lenght += printerStockage[indexPrinter].func(listArgs);
 					recognized_format = 1;

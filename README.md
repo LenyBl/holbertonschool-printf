@@ -105,13 +105,13 @@ man ./man_3_printf
 chmod u+x _printf.c
 ```
 
-## Betty Style 
+### Betty Style 
 
 ```bash
 betty _printf.c
 ```
 
-## Valgrind
+### Valgrind
 
 ```bash
 valgrind --leak-check=full _printf.c

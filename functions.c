@@ -9,6 +9,7 @@
 int print_char(va_list args)
 {
 	char c = va_arg(args, int);
+
 	putchar(c);
 	return (1);
 }
@@ -78,8 +79,9 @@ int print_integer(va_list args)
 
 	while (num > 0)
 	{
-		buffer[i++] = (num % 10) + '0'; /* extract the last digit and convert to char */
-		num /= 10;						/* remove the last digit */
+		/* extract the last digit and convert to char */
+		buffer[i++] = (num % 10) + '0';
+		num /= 10; /* remove the last digit */
 	}
 
 	while (i--)

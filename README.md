@@ -2,7 +2,7 @@
 
 A custom implementation of the C `printf` function, written as part of the Holberton curriculum.
 
-![texte alternatif](flowchart/flowchart-printff.png)
+![texte alternatif](flowchart/flowchart-printf.png)
 
 ## Description
 
